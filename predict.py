@@ -15,7 +15,7 @@ from diffusers import (
 from PIL import Image
 from cog import BasePredictor, Input, Path
 
-MODEL_ID = "stabilityai/stable-diffusion-2-1"
+MODEL_ID = "XpucT/Deliberate"
 MODEL_CACHE = "diffusers-cache"
 
 
