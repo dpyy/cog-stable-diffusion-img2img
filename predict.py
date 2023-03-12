@@ -24,7 +24,7 @@ class Predictor(BasePredictor):
         """Load the model into memory to make running multiple predictions efficient"""
         print("Loading pipeline...")
         self.txt2img_pipe = StableDiffusionPipeline.from_pretrained(
-            MODEL_ID,
+            f"{MODEL_CACHE}/{MODEL_ID}",
             cache_dir=MODEL_CACHE,
             local_files_only=True,
         ).to("cuda")
